@@ -3,23 +3,21 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.scss']
+  styleUrls: ['./menu.component.scss'],
 })
 export class MenuComponent implements OnInit {
-  public links: Array<{ text: string, path: string }> = [
-    { text: 'Home', path: '/' },
-    { text: 'About', path: '/about' },
-    { text: 'Contact', path: '/contact' },
-    { text: 'Login', path: '/login' },
-    { text: 'Register', path: '/register' },
-    { text: 'Dashboard', path: '/dashboard' },
-    { text: 'Profile', path: '/profile' },
-    { text: 'Settings', path: '/settings' },
-    { text: 'Logout', path: '/logout' },
+  public links: Array<{text: string; path: string; icon: string}> = [
+    {text: 'Home', path: '/', icon: 'house'},
+    {text: 'About', path: '/about', icon: 'info-circle'},
+    {text: 'Contact', path: '/contact', icon: 'person'},
+    {text: 'Login', path: '/login', icon: 'box-arrow-in-right'},
+    {text: 'Register', path: '/register', icon: 'box-arrow-in-right'},
+    {text: 'Dashboard', path: '/dashboard', icon: 'speedometer2'},
+    {text: 'Profile', path: '/profile', icon: 'person'},
+    {text: 'Settings', path: '/settings', icon: 'gear'},
+    {text: 'Logout', path: '/logout', icon: 'box-arrow-right'},
   ];
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
