@@ -1,1 +1,13 @@
-<p>car-list works!</p>
+<ul class="list-group list-group-flush" *ngFor="let car of carList">
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col-md-8">
+        <h4>{{ car.name }}</h4>
+        <p>{{ car.description }}</p>
+      </div>
+      <div class="col-md-4">
+        <img src="{{ car.image }}" alt="{{ car.name }}" class="img-fluid" />
+      </div>
+    </div>
+  </li>
+</ul>

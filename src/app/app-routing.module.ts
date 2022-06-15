@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { CarListComponent } from './car-list/car-list.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { PrivacyComponent } from './privacy/privacy.component';
 import { ProfileComponent } from './profile/profile.component';
 import { RegisterComponent } from './register/register.component';
 
@@ -12,6 +14,8 @@ const routes: Routes = [
   {path: 'register', component: RegisterComponent},
   {path: 'about', component: AboutUsComponent},
   {path: 'profile', component: ProfileComponent},
+  {path: 'carList', component: CarListComponent},
+  {path: 'privacy', component: PrivacyComponent},
   {path: '*', redirectTo: 'home', pathMatch: 'full'},
   {path: '**', redirectTo: ''},
 ];
