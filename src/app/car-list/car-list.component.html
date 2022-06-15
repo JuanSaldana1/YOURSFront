@@ -1,10 +1,12 @@
 <ul class="list-group list-group-flush" *ngFor="let car of carList">
   <li class="list-group-item">
-    <div class="d-flex flex-wrap">
-      <img src="" alt="" />
-      <p>{{ car.name }}</p>
+    <div class="d-flex flex-wrap align-items-center">
+      <div class="flex-grow-1">
+        <img src="{{ car.img }}" alt="" />
+        <p>{{ car.name }}</p>
+      </div>
       <div class="justify-content-end">
-        <a class="btn btn-outline-dark btn-sm" href="#" role="button">
+        <a class="btn btn-outline-dark" href="#" role="button">
           <i class="bi bi-cart-plus"></i> Add to cart
         </a>
       </div>
