@@ -12,10 +12,11 @@ export class MenuComponent implements OnInit {
     {text: 'Contact', path: '/contact', icon: 'person'},
     {text: 'Login', path: '/auth', icon: 'box-arrow-in-right'},
     {text: 'Dashboard', path: '/dashboard', icon: 'speedometer2'},
-    {text: 'Profile', path: '/profile', icon: 'person'},
     {text: 'Settings', path: '/settings', icon: 'gear'},
     {text: 'Logout', path: '/logout', icon: 'box-arrow-right'},
   ];
+  public isLoggedIn: boolean = false;
+
   constructor() {}
 
   ngOnInit(): void {}

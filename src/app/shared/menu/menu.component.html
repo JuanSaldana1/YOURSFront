@@ -20,6 +20,14 @@
             {{ link.text }}
           </a>
         </li>
+        <ng-container *ngIf="isLoggedIn">
+          <li class="nav-item visually-hidden">
+            <a class="nav-link" routerLink="/profile">
+              <i class="bi bi-person"></i>
+              profile
+            </a>
+          </li>
+        </ng-container>
       </ul>
     </div>
   </div>
